@@ -23,6 +23,8 @@ sequenceDiagram
 
 ## Installation
 
+需要本地运行Ollama。
+
 ```Bash
 $ poetry install
 ```

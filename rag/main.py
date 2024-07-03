@@ -11,8 +11,8 @@ args = parser.parse_args()
 if not os.path.exists(args.path):
     exit("Invalid path")
 
-# question = 'I want to buy a house in western Singapore. The price should not exceed $2,000,000. What is your recommendation?'
-question = '2024欧洲杯足球比赛，德国和匈牙利比赛的比分是多少？'
+# question = '2024欧洲杯足球比赛，德国和匈牙利比赛的比分是多少？'
+question = input('请输入2024欧洲杯A组比赛相关问题: ')
 rag = RAG(args.path, question)
 
 print(f'Your data path: {args.path}\n')

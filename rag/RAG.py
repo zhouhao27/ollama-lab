@@ -21,16 +21,12 @@ class RAG:
         loader = None
         # Use extension to judge the file type. It's not accurate but it's good enough for now.
         if os.path.isdir(path):
-            print("Directory")
             loader = DirectoryLoader(path)
-        elif path.endswith('.pdf'):
-            print("PDF")
+        elif path.endswith('.pdf'):            
             loader = PyMuPDFLoader(path)
-        elif path.endswith('.txt'):
-            print("Text")
+        elif path.endswith('.txt'):            
             loader = TextLoader(path)
-        elif path.endswith('.html'):
-            print("HTML")
+        elif path.endswith('.html'):            
             loader = WebBaseLoader(path)
 
         if loader is None:
