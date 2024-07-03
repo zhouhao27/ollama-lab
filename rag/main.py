@@ -4,7 +4,7 @@ import argparse
 
 ### Reference: https://youtu.be/O7RdEyRsatw?list=PLYQsp-tXX9w5A0gsQ0iaJead_HvMzyl2M
 #### Usage
-parser = argparse.ArgumentParser(prog='Emebedding')
+parser = argparse.ArgumentParser(prog='RAG')
 parser.add_argument('path', type=str, help='Document path')
 args = parser.parse_args()
 

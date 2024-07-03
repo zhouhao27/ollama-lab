@@ -6,13 +6,15 @@ authors = ["Zhou Hao <zhou.hao.27@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "3.10.14"
 ollama = "^0.2.1"
 chromadb = "^0.5.3"
 argparse = "^1.4.0"
 langchain-core = "^0.2.11"
 langchain-community = "^0.2.6"
 bs4 = "^0.0.2"
+langdetect = "^1.0.9"
+simpleaudio = "^1.0.4"
 
 
 [build-system]
