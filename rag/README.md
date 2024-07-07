@@ -13,8 +13,9 @@ sequenceDiagram
     User -->> Embedding: select model
     Embedding -->> VectorStore: embedding    
     Splitter -->> VectorStore: splitted text    
-    User -->> VectorStore: question      
-    VectorStore -->> LLM: formated context    
+    VectorStore -->> Retriever: search_type and search_kwargs
+    User -->> Retriever: question      
+    Retriever -->> LLM: formated context    
     activate LLM
     User -->> LLM: question
     LLM -->> User: response
@@ -41,3 +42,7 @@ Or
 $ poetry shell
 $ python rag/main.py ./data/matches.txt
 ```
+
+## Issues
+
+- Webscraper: Need to find a way to bypass the bot detection.
